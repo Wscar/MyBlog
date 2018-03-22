@@ -1,0 +1,9 @@
+F:\MyBlog\src\MyBlog\Blog.EntityFramework\bin\Debug\netcoreapp2.0\Blog.EntityFramework.deps.json
+F:\MyBlog\src\MyBlog\Blog.EntityFramework\bin\Debug\netcoreapp2.0\Blog.EntityFramework.dll
+F:\MyBlog\src\MyBlog\Blog.EntityFramework\obj\Debug\netcoreapp2.0\Blog.EntityFramework.csproj.CoreCompileInputs.cache
+F:\MyBlog\src\MyBlog\Blog.EntityFramework\obj\Debug\netcoreapp2.0\Blog.EntityFramework.AssemblyInfoInputs.cache
+F:\MyBlog\src\MyBlog\Blog.EntityFramework\obj\Debug\netcoreapp2.0\Blog.EntityFramework.AssemblyInfo.cs
+F:\MyBlog\src\MyBlog\Blog.EntityFramework\bin\Debug\netcoreapp2.0\Blog.EntityFramework.pdb
+F:\MyBlog\src\MyBlog\Blog.EntityFramework\obj\Debug\netcoreapp2.0\Blog.EntityFramework.dll
+F:\MyBlog\src\MyBlog\Blog.EntityFramework\obj\Debug\netcoreapp2.0\Blog.EntityFramework.pdb
+F:\MyBlog\src\MyBlog\Blog.EntityFramework\obj\Debug\netcoreapp2.0\Blog.EntityFramework.csprojResolveAssemblyReference.cache

@@ -1,0 +1,11 @@
+F:\MyBlog\src\MyBlog\Bolg.Web\bin\Debug\netcoreapp2.0\Bolg.Web.deps.json
+F:\MyBlog\src\MyBlog\Bolg.Web\bin\Debug\netcoreapp2.0\Bolg.Web.runtimeconfig.json
+F:\MyBlog\src\MyBlog\Bolg.Web\bin\Debug\netcoreapp2.0\Bolg.Web.runtimeconfig.dev.json
+F:\MyBlog\src\MyBlog\Bolg.Web\bin\Debug\netcoreapp2.0\Bolg.Web.dll
+F:\MyBlog\src\MyBlog\Bolg.Web\obj\Debug\netcoreapp2.0\Bolg.Web.csprojResolveAssemblyReference.cache
+F:\MyBlog\src\MyBlog\Bolg.Web\obj\Debug\netcoreapp2.0\Bolg.Web.csproj.CoreCompileInputs.cache
+F:\MyBlog\src\MyBlog\Bolg.Web\obj\Debug\netcoreapp2.0\Bolg.Web.AssemblyInfoInputs.cache
+F:\MyBlog\src\MyBlog\Bolg.Web\obj\Debug\netcoreapp2.0\Bolg.Web.AssemblyInfo.cs
+F:\MyBlog\src\MyBlog\Bolg.Web\bin\Debug\netcoreapp2.0\Bolg.Web.pdb
+F:\MyBlog\src\MyBlog\Bolg.Web\obj\Debug\netcoreapp2.0\Bolg.Web.dll
+F:\MyBlog\src\MyBlog\Bolg.Web\obj\Debug\netcoreapp2.0\Bolg.Web.pdb
