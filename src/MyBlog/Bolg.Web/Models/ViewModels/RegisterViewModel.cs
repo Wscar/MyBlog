@@ -16,8 +16,7 @@ namespace Bolg.Web.Models.ViewModels
         [Required]
         [DataType(DataType.Password)]
         public string PassWord { get; set; }
-        [Required(ErrorMessage ="两次密码不一致")]        
-        [DataType(DataType.Password)]
+        [Compare("PassWord",ErrorMessage ="两次密码不一致")]
         public string ConfirmPassWord { get; set; }
     }
 }

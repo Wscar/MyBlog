@@ -7,3 +7,12 @@ F:\MyBlog\src\MyBlog\Blog.EntityFramework\bin\Debug\netcoreapp2.0\Blog.EntityFra
 F:\MyBlog\src\MyBlog\Blog.EntityFramework\obj\Debug\netcoreapp2.0\Blog.EntityFramework.dll
 F:\MyBlog\src\MyBlog\Blog.EntityFramework\obj\Debug\netcoreapp2.0\Blog.EntityFramework.pdb
 F:\MyBlog\src\MyBlog\Blog.EntityFramework\obj\Debug\netcoreapp2.0\Blog.EntityFramework.csprojResolveAssemblyReference.cache
+F:\MyProject\MyBlog\src\MyBlog\Blog.EntityFramework\bin\Debug\netcoreapp2.0\Blog.EntityFramework.deps.json
+F:\MyProject\MyBlog\src\MyBlog\Blog.EntityFramework\bin\Debug\netcoreapp2.0\Blog.EntityFramework.dll
+F:\MyProject\MyBlog\src\MyBlog\Blog.EntityFramework\bin\Debug\netcoreapp2.0\Blog.EntityFramework.pdb
+F:\MyProject\MyBlog\src\MyBlog\Blog.EntityFramework\obj\Debug\netcoreapp2.0\Blog.EntityFramework.csprojResolveAssemblyReference.cache
+F:\MyProject\MyBlog\src\MyBlog\Blog.EntityFramework\obj\Debug\netcoreapp2.0\Blog.EntityFramework.csproj.CoreCompileInputs.cache
+F:\MyProject\MyBlog\src\MyBlog\Blog.EntityFramework\obj\Debug\netcoreapp2.0\Blog.EntityFramework.AssemblyInfoInputs.cache
+F:\MyProject\MyBlog\src\MyBlog\Blog.EntityFramework\obj\Debug\netcoreapp2.0\Blog.EntityFramework.AssemblyInfo.cs
+F:\MyProject\MyBlog\src\MyBlog\Blog.EntityFramework\obj\Debug\netcoreapp2.0\Blog.EntityFramework.dll
+F:\MyProject\MyBlog\src\MyBlog\Blog.EntityFramework\obj\Debug\netcoreapp2.0\Blog.EntityFramework.pdb

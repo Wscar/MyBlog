@@ -20,8 +20,7 @@ namespace Bolg.Web.Controllers
             userManager = _userManager;
             signInManager = _signInManager;
             roleManager = _roleManager;
-            roleManager.CreateAsync(new IdentityRole("admin"));
-        
+            //roleManager.CreateAsync(new IdentityRole("admin"));       
             //var role = roleManager.FindByNameAsync("admin");
             //roleManager.AddClaimAsync(role.Result, new Claim("admin","true"));
         }

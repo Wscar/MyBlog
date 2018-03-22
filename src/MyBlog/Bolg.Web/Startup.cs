@@ -26,7 +26,7 @@ namespace Bolg.Web
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<ApplicatonUserDbContext>(optinos => optinos.UseMySQL(Configuration.GetConnectionString("MySql")));
-            services.AddIdentity<ApplicationUser, IdentityRole>()
+            services.AddIdentity<ApplicationUser, ApplicationUserRole>()
                 .AddEntityFrameworkStores<ApplicatonUserDbContext>()
                 .AddDefaultTokenProviders();
             services.Configure<IdentityOptions>(options =>

@@ -9,14 +9,14 @@ using Microsoft.AspNetCore.Authorization;
 
 namespace Bolg.Web.Controllers
 {  
-    [Authorize(Policy  ="admin")]
+   
     public class HomeController : Controller
-    {   [Authorize(Roles  ="admin")]
+    {  
         public IActionResult Index()
         {
             return View();
         }
-        [Authorize(Roles ="admin")]
+       
         public IActionResult About()
         {
             ViewData["Message"] = "Your application description page.";

@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace Bolg.Web.Migrations
 {
-    public partial class UserMigration : Migration
+    public partial class init : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -12,7 +12,8 @@ namespace Bolg.Web.Migrations
                 name: "AspNetRoles",
                 columns: table => new
                 {
-                    Id = table.Column<string>(type: "varchar(128)", nullable: false),
+                    Id = table.Column<int>(nullable: false)
+                        .Annotation("MySQL:AutoIncrement", true),
                     ConcurrencyStamp = table.Column<string>(nullable: true),
                     Name = table.Column<string>(maxLength: 256, nullable: true),
                     NormalizedName = table.Column<string>(maxLength: 256, nullable: true)
@@ -26,14 +27,17 @@ namespace Bolg.Web.Migrations
                 name: "AspNetUsers",
                 columns: table => new
                 {
-                    Id = table.Column<string>(type: "varchar(128)",nullable: false),
+                    Id = table.Column<int>(nullable: false)
+                        .Annotation("MySQL:AutoIncrement", true),
                     AccessFailedCount = table.Column<int>(nullable: false),
-                    Address = table.Column<string>(type: "varchar(128)", nullable: true),
+                    Address = table.Column<string>(type: "varchar(128) ", nullable: true),
+                    Avater = table.Column<string>(type: "varchar(256)", nullable: true),
                     ConcurrencyStamp = table.Column<string>(nullable: true),
                     Email = table.Column<string>(maxLength: 256, nullable: true),
                     EmailConfirmed = table.Column<bool>(nullable: false),
                     LockoutEnabled = table.Column<bool>(nullable: false),
                     LockoutEnd = table.Column<DateTimeOffset>(nullable: true),
+                    Nickname = table.Column<string>(nullable: true),
                     NormalizedEmail = table.Column<string>(maxLength: 256, nullable: true),
                     NormalizedUserName = table.Column<string>(maxLength: 256, nullable: true),
                     PasswordHash = table.Column<string>(nullable: true),
@@ -57,7 +61,7 @@ namespace Bolg.Web.Migrations
                         .Annotation("MySQL:AutoIncrement", true),
                     ClaimType = table.Column<string>(nullable: true),
                     ClaimValue = table.Column<string>(nullable: true),
-                    RoleId = table.Column<string>(nullable: false)
+                    RoleId = table.Column<int>(nullable: false)
                 },
                 constraints: table =>
                 {
@@ -78,7 +82,7 @@ namespace Bolg.Web.Migrations
                         .Annotation("MySQL:AutoIncrement", true),
                     ClaimType = table.Column<string>(nullable: true),
                     ClaimValue = table.Column<string>(nullable: true),
-                    UserId = table.Column<string>(nullable: false)
+                    UserId = table.Column<int>(nullable: false)
                 },
                 constraints: table =>
                 {
@@ -95,10 +99,10 @@ namespace Bolg.Web.Migrations
                 name: "AspNetUserLogins",
                 columns: table => new
                 {
-                    LoginProvider = table.Column<string>(type: "varchar(128)", nullable: false),
-                    ProviderKey = table.Column<string>(nullable: false),
+                    LoginProvider = table.Column<string>(type: "varchar(256)",nullable: false),
+                    ProviderKey = table.Column<string>(type: "varchar(256)",nullable: false),
                     ProviderDisplayName = table.Column<string>(nullable: true),
-                    UserId = table.Column<string>(nullable: false)
+                    UserId = table.Column<int>(nullable: false)
                 },
                 constraints: table =>
                 {
@@ -115,8 +119,8 @@ namespace Bolg.Web.Migrations
                 name: "AspNetUserRoles",
                 columns: table => new
                 {
-                    UserId = table.Column<string>(type: "varchar(128)", nullable: false),
-                    RoleId = table.Column<string>(nullable: false)
+                    UserId = table.Column<int>(nullable: false),
+                    RoleId = table.Column<int>(nullable: false)
                 },
                 constraints: table =>
                 {
@@ -139,10 +143,10 @@ namespace Bolg.Web.Migrations
                 name: "AspNetUserTokens",
                 columns: table => new
                 {
-                    UserId = table.Column<string>(type: "varchar(128)", nullable: false),
-                    LoginProvider = table.Column<string>(type: "varchar(256)",nullable: false),
-                    Name = table.Column<string>(type: "varchar(128)", nullable: false),
-                    Value = table.Column<string>(nullable: true)
+                    UserId = table.Column<int>( nullable: false),
+                    LoginProvider = table.Column<string>(type:"varchar(256)",nullable: false),
+                    Name = table.Column<string>(type: "varchar(256)", nullable: false),
+                    Value = table.Column<string>(type: "varchar(256)", nullable: true)
                 },
                 constraints: table =>
                 {

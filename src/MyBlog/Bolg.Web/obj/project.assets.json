@@ -1,4 +1,4 @@
-{
+﻿{
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v2.0": {
@@ -13721,15 +13721,12 @@
   },
   "project": {
     "version": "1.0.0",
-    "restoreSettings": {
-      "hideWarningsAndErrors": true
-    },
     "restore": {
-      "projectUniqueName": "F:\\MyBlog\\src\\MyBlog\\Bolg.Web\\Bolg.Web.csproj",
+      "projectUniqueName": "F:\\MyProject\\MyBlog\\src\\MyBlog\\Bolg.Web\\Bolg.Web.csproj",
       "projectName": "Bolg.Web",
-      "projectPath": "F:\\MyBlog\\src\\MyBlog\\Bolg.Web\\Bolg.Web.csproj",
+      "projectPath": "F:\\MyProject\\MyBlog\\src\\MyBlog\\Bolg.Web\\Bolg.Web.csproj",
       "packagesPath": "C:\\Users\\夜莫白\\.nuget\\packages\\",
-      "outputPath": "F:\\MyBlog\\src\\MyBlog\\Bolg.Web\\obj\\",
+      "outputPath": "F:\\MyProject\\MyBlog\\src\\MyBlog\\Bolg.Web\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\",
