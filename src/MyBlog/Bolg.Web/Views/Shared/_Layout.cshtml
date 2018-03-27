@@ -7,67 +7,61 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - Bolg.Web</title>
+    <title>@ViewData["Title"] - MeijuWeb</title>
 
-    @*<environment include="Development">
-            <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
-            <link rel="stylesheet" href="~/css/site.css" />
-        </environment>
-        <environment exclude="Development">
-            <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/css/bootstrap.min.css"
-                  asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
-                  asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
-            <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
-        </environment>*@
-    <link rel="stylesheet" href="~/lib/semantic/semantic.css" />
-    <script src="~/lib/semantic/semantic.min.js"></script>
-    <style>
-        body {
-            font-family: 'microsoft yahei',Arial,sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-    </style>
+    <environment include="Development">
+        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+        <link rel="stylesheet" href="~/css/site.css" />
+    </environment>
+    <environment exclude="Development">
+        <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/css/bootstrap.min.css"
+              asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
+              asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
+        <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
+    </environment>
 </head>
-<body class="pushable">
+<body>
     <nav class="navbar navbar-inverse navbar-fixed-top">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">Bolg.Web</a>
-                </div>
-                <div class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav">
-                        <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
-                        <li><a asp-area="" asp-controller="Home" asp-action="About">About</a></li>
-                        <li><a asp-area="" asp-controller="Home" asp-action="Contact">Contact</a></li>
-                    </ul>
-                    @if (User.Identity.IsAuthenticated)
-                    {
-
-                        <form asp-action="LogOut" asp-controller="Account">
-                            <ul class="nav navbar-nav navbar-right">
-                                <li><a title="Welcome">@UserManager.FindByNameAsync(User.Identity.Name).Result.Email</a></li>
-                                <li><button type="submit" class="btn btn-link navbar-btn navbar-link">退出</button>></li>>
-                            </ul>
-                        </form>
-                    }
-                    else
-                    {
-                        <ul class="nav navbar-nav navbar-right">
-                            <li><a asp-action="Register" asp-controller="Account">注册</a></li>
-                            <li><a asp-action="LogIn" asp-controller="Account">登陆</a></li>
-                        </ul>
-                    }
-
-                </div>
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">MeijuWeb</a>
             </div>
-        </nav>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="About">About</a></li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="Contact">Contact</a></li>
+                </ul>
+
+                @if (User.Identity.IsAuthenticated)  //如果用户是验证过的就显示用户的信息
+                {
+                    <form asp-action="LogOut" asp-controller="Account" method="post">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a title="Welcode">@UserManager.FindByNameAsync(User.Identity.Name).Result.Nickname</a></li>
+                            <li> <button type="submit" class="btn-link navbar-btn navbar-link"> LogOut</button></li>
+                        </ul>
+
+                    </form>
+
+                }
+                else
+                {
+                    <ul class="nav navbar-nav navbar-right">
+
+                        <li><a asp-action="SignUp" asp-controller="Account">Register</a></li>
+                        <li><a asp-action="SignIn" asp-controller="Account" asp-route-returnUrl="@ViewContext.HttpContext.Request.Path">Singin</a></li>
+                    </ul>
+
+                }
+            </div>
+        </div>
+    </nav>
     <div class="container body-content">
         @RenderBody()
         <hr />
@@ -75,6 +69,7 @@
             <p>&copy; 2018 - MeijuWeb</p>
         </footer>
     </div>
+
     <environment include="Development">
         <script src="~/lib/jquery/dist/jquery.js"></script>
         <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>

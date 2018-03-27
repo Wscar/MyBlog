@@ -1,0 +1,14 @@
+F:\MyProject\MyBlog\src\MyBlog\BlogTests\bin\Debug\netcoreapp2.0\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+F:\MyProject\MyBlog\src\MyBlog\BlogTests\bin\Debug\netcoreapp2.0\xunit.runner.reporters.netcoreapp10.dll
+F:\MyProject\MyBlog\src\MyBlog\BlogTests\bin\Debug\netcoreapp2.0\xunit.runner.utility.netcoreapp10.dll
+F:\MyProject\MyBlog\src\MyBlog\BlogTests\bin\Debug\netcoreapp2.0\BlogTests.deps.json
+F:\MyProject\MyBlog\src\MyBlog\BlogTests\bin\Debug\netcoreapp2.0\BlogTests.runtimeconfig.json
+F:\MyProject\MyBlog\src\MyBlog\BlogTests\bin\Debug\netcoreapp2.0\BlogTests.runtimeconfig.dev.json
+F:\MyProject\MyBlog\src\MyBlog\BlogTests\bin\Debug\netcoreapp2.0\BlogTests.dll
+F:\MyProject\MyBlog\src\MyBlog\BlogTests\bin\Debug\netcoreapp2.0\BlogTests.pdb
+F:\MyProject\MyBlog\src\MyBlog\BlogTests\obj\Debug\netcoreapp2.0\BlogTests.csprojResolveAssemblyReference.cache
+F:\MyProject\MyBlog\src\MyBlog\BlogTests\obj\Debug\netcoreapp2.0\BlogTests.csproj.CoreCompileInputs.cache
+F:\MyProject\MyBlog\src\MyBlog\BlogTests\obj\Debug\netcoreapp2.0\BlogTests.AssemblyInfoInputs.cache
+F:\MyProject\MyBlog\src\MyBlog\BlogTests\obj\Debug\netcoreapp2.0\BlogTests.AssemblyInfo.cs
+F:\MyProject\MyBlog\src\MyBlog\BlogTests\obj\Debug\netcoreapp2.0\BlogTests.dll
+F:\MyProject\MyBlog\src\MyBlog\BlogTests\obj\Debug\netcoreapp2.0\BlogTests.pdb

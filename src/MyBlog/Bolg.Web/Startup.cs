@@ -26,6 +26,7 @@ namespace Bolg.Web
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<ApplicatonUserDbContext>(optinos => optinos.UseMySQL(Configuration.GetConnectionString("MySql")));
+            //添加identity配置
             services.AddIdentity<ApplicationUser, ApplicationUserRole>()
                 .AddEntityFrameworkStores<ApplicatonUserDbContext>()
                 .AddDefaultTokenProviders();
@@ -38,6 +39,7 @@ namespace Bolg.Web
                 // Lockout settings              
             });
             services.AddMvc();
+            //添加认证方式
             services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
                 .AddCookie(optinos =>
                 {
@@ -45,7 +47,7 @@ namespace Bolg.Web
                     optinos.AccessDeniedPath = new Microsoft.AspNetCore.Http.PathString("Account/AccessDenied");
                     
                 });
-            
+            //添加授权方案
             services.AddAuthorization(options =>
             {  
                 options.AddPolicy("admin", policy => { policy.RequireClaim("admin"); });
